@@ -98,7 +98,7 @@ li{
 #slider{
     width: 100%;
     padding-top: 50%;
-    background: url("/img/chicago.jpg") no-repeat center top / cover;
+    background: url("../img/chicago.jpg") no-repeat center top / cover;
     position: relative;
     display: block;
 }
@@ -318,7 +318,7 @@ li{
 .session-img{
     width: 100%;
     padding-top: 50%;
-    background: url("/img/map.jpg") no-repeat center top / cover;
+    background: url("../img/map.jpg") no-repeat center top / cover;
 }
 
 .footer{
@@ -391,13 +391,14 @@ li{
     position: fixed;
     z-index: 5;
     background-color: #fff;
-    top: -100%;
+    top: -200%;
     left: 20%;
     right: 20%;
     bottom: auto;
     overflow: hidden;
     transition: 0.5s;
     z-index: 11;
+    /* display: none; */
 }
 
 
