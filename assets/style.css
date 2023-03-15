@@ -1,0 +1,493 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#main{
+    width: 100%;
+}
+
+#header{
+    width: 100%;
+    height: 40px;
+    background-color: #000!important;
+    display: flex;
+    justify-content: space-between;
+    position:sticky;
+    top: 0;
+    z-index: 1;
+
+}
+
+li{
+    list-style: none;
+    display: inline-block;
+}
+
+#nav > li > a{
+  
+    color: #fff;
+    
+}
+
+#nav  li  a, #search{
+    padding: 12px 24px;
+    text-decoration: none;
+    font-size: 14px;
+    text-transform: uppercase;
+    font-weight: 400;
+    display: flex;
+}
+
+#nav li:hover #subnav{
+    display: block;
+}
+
+#nav > li:hover > a{
+    color: #000!important;
+    background-color: #ccc!important;
+}
+
+#nav li{
+    position: relative;
+}
+.fa-sort-desc{
+    display: inline-block;;
+    margin: -2px 2px -10px 2px;
+
+}
+#nav #subnav {
+    position: absolute;
+    display: none;
+    background-color: #fff;
+    color: #000;
+    box-shadow: -0px 3px 6px 3px rgba(0,0,0,0.2);
+
+}
+#subnav a {
+    color: #000;
+
+}
+#subnav li:hover a {
+    background-color: #ccc;
+    color: #fff;
+
+}
+#subnav li{
+    display: block;
+
+}
+#subnav li a{
+    padding: 10px 24px 10px 10px ;
+
+}
+
+#search{
+    color: #fff;
+
+}
+
+#search:hover{
+    cursor: pointer;
+    background-color: #f44336!important;
+
+}
+
+#slider{
+    width: 100%;
+    padding-top: 50%;
+    background: url("/img/chicago.jpg") no-repeat center top / cover;
+    position: relative;
+    display: block;
+}
+
+.slider-heading-text, .slider-description-text{
+    color: #fff;
+    bottom: 60px;
+    text-align: center;
+    left: 0;
+    right: 0;
+    position: absolute;
+}
+
+.slider-heading-text{
+    margin: 35px 0;
+    font-weight: 400;
+}
+
+.slider-description-text{
+    font-weight: 600;
+}
+
+/* content */
+#content{
+    width: 100%;
+
+}
+#content .session-content{
+    max-width: 800px;
+    margin: auto;
+    padding: 64px 16px;
+}
+
+.session-content .session-heading
+{
+    margin: 10px 0;
+    text-align: center;
+    font-size: 30px;
+    font-weight: 200;
+    letter-spacing: 2px;
+}
+.session-content .session-sub-heading
+{
+    margin: 15px 0;
+    text-align: center;
+    font-size: 15px;
+    font-style: italic;
+    font-weight: 200;
+    color: #000;
+    opacity: 0.6;
+}
+.session-content .about-content{
+    text-align: justify;
+    margin: 15px 0;
+    font-size: 15px;
+}
+
+.band-about{
+    width: 100%;
+    padding: 32px 0;
+    display: flex;
+    justify-content: space-around;
+}
+.band-about-col{
+    width: 33.33%;
+    text-align: center;
+}
+.band-name{
+    margin: 15px;
+    font-size: 15px;
+}
+
+.band-about-col img{
+    width: 60%;
+    border-radius: 4px;
+}
+
+.session-bgcolor-black{
+    background-color: #000;
+}
+
+.session-bgcolor-black .session-heading,
+.session-bgcolor-black .session-sub-heading{
+    color: #fff;
+}
+
+.Tour-about{
+    background-color: #fff;
+}
+.tour-month{
+    padding: 8px 16px;
+    font-size: 15px;
+    color: #757575;
+}
+.tour-month span{
+    background-color: #f44336;
+    color: #fff;
+    padding: 2px 4px;
+    margin-left: 12px;
+}
+
+.tour-month .tickets-quantity{
+    background-color: #000;
+    color: #fff;
+    border-radius: 50%;
+    padding: 2px 6px;
+    float: right;
+}
+.tour-address{
+    background-color: #000;
+    padding: 32px 0;
+    width: 100%;
+    color: #000;
+    display: flex;
+    justify-content: space-between;
+}
+.address-col{
+    width: 32.2%;
+}
+.address-col img{
+    width: 100%;
+}
+.address-col img:hover{
+    opacity: 0.6;
+}
+.tour-address-about{
+    background-color: #fff;
+    font-size: 15px;
+    padding: 0.15px 16px;
+}
+.address{
+    margin: 15px 0;
+    font-weight: 600;
+}
+.date{
+    margin: 15px 0;
+    opacity: 0.8;
+}
+.address-about{
+    margin: 15px 0;
+}
+.tour-address-about button{
+    margin: 0 0 15px 0;
+    padding: 8px 16px;
+    background-color: #000;
+    color: #fff;
+    border: none;
+}
+.tour-address-about button:hover{
+    cursor: pointer;
+    color: #000!important;
+    background-color: #ccc!important;
+}
+
+.contact-about{
+    padding: 32px 0;
+    display: flex;
+    width: 100%;
+    font-size: 18px;
+}
+.contact-address .fa{
+    width: 8%;
+    margin-bottom: 8px;
+
+}
+
+.contact-address{
+    min-width: 50%;
+}
+.form-contact {
+    min-width: 50%;
+}
+.form-contact form {
+    width: 100%;
+}
+.form-half{
+    float: left;
+    width: 50%;
+}
+.form-contact input{
+    margin-bottom: 10px;
+    float: right;
+    padding: 8px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 2px;
+}
+
+.form-half:first-child input{
+    float: left;
+}
+.form-contact form .message{
+   
+    min-width: 100%;
+    padding: 8px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 2px;
+    resize: none;
+}
+.form-contact button{
+    padding: 8px 16px;
+    border: none;
+    background-color: #000;
+    color: #fff;
+    float: right;
+}
+
+.form-contact button:hover{
+    cursor: pointer;
+    padding: 8px 16px;
+    border: none;
+    background-color: #ccc;
+    color: #000;
+}
+
+.session-img{
+    width: 100%;
+    padding-top: 50%;
+    background: url("/img/map.jpg") no-repeat center top / cover;
+}
+
+.footer{
+    padding: 64px;
+    font-size: 15px;
+    text-align: center;
+    opacity: 0.6;
+    
+}
+.footer .footer-icon {
+    margin-bottom: 15px;
+   
+}
+.footer .footer-icon i{
+    font-size: 24px;
+   
+}
+
+.footer .footer-icon i:hover{
+    opacity: 0.6;
+   
+}
+
+.footer-content a{
+    color: #000;
+    background-color: #dadada;
+}
+
+/* responsive */
+@media only screen and (max-width: 768px) {
+  .band-about-col,
+  .address-col,
+  .col
+  {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+
+  .band-about,
+  .tour-address,
+  .contact-about{
+    width: 100%;
+    padding: 32px 0;
+    display:list-item;
+}
+.form-half,
+ .row-form,
+ .form-half input{
+    width: 100%;
+}
+
+
+}
+
+.overlay{
+    position: fixed !important;;
+    background-color: rgba(0,0,0,0.5);
+    top: 0%;
+    left: 0%;
+    right: 0%;
+    bottom: 0%;
+    z-index: 10;
+    height: 0%;
+    overflow: hidden;
+    transition: 0.3;
+    
+}
+
+.modal_tickets{
+    position: fixed;
+    z-index: 5;
+    background-color: #fff;
+    top: -100%;
+    left: 20%;
+    right: 20%;
+    bottom: auto;
+    overflow: hidden;
+    transition: 0.5s;
+    z-index: 11;
+}
+
+
+.modal_title h1{
+    padding: 32px 16px;
+    background-color: #009688;
+    color: #fff;
+    text-align: center;
+    font-weight: 400;
+    letter-spacing: 5px;
+}
+
+.modal_title_close{
+    position: absolute;
+    top: 0;
+    right: 0;
+    border: none;
+    color: #fff;
+    padding: 16px;
+    background-color: #009688;
+}
+.modal_title_close:hover, .modal_body form button:hover,
+.modal_footer .modal_close:hover{
+    cursor: pointer;
+    background-color: #009688;
+    color: #000;
+    background-color: #ccc;
+}
+
+.modal_body{
+    color: #000;
+    padding: 0.15px 16px;
+
+}
+
+
+.modal_body form label{
+    display: block;
+    margin: 15px 0px;
+    
+}
+
+.modal_body form input{
+    display: block;
+    margin: 15px 0px;
+    width: 100%;
+    padding: 8px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    
+}
+
+.modal_body form button{
+    display: block;
+    margin: 16px 0;
+    width: 100%;
+    padding: 16px;
+    background-color: #009688;
+    border: 1px solid #ccc;
+    
+}
+
+.modal_body form button{
+    display: block;
+    color: #fff;
+    margin: 16px 0;
+    width: 100%;
+    padding: 16px;
+    background-color: #009688;
+    border: 1px solid #ccc;
+    
+}
+
+.modal_footer{
+    color: #000;
+    padding: 15px 16px;
+    display: flex;
+    justify-content: space-between;
+    
+
+}
+.modal_footer .modal_close{
+    background-color: #f44336;
+    border: none;
+    color: #fff;
+    padding: 8px 16px ;
+}
+.modal_footer a{
+    color: #2196F3;
+}
+
+
+
